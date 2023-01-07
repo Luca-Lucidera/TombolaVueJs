@@ -10,7 +10,7 @@ export const useStorage = defineStore('main', {
         owner: ""
       },
       Cartella: [[],[],[]],
-      socket: io(),
+      socket: io('https://server-tombola.glitch.me/'),
       GameEvent: {
         ambo: {
           fatto: false,
