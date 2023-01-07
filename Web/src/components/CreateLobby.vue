@@ -41,7 +41,7 @@ import { useStorage } from '../stores/index'
 import { ref } from 'vue'
 import { useRouter, RouterLink } from 'vue-router';
 import { io } from "socket.io-client"
-const socket = io("http://localhost:3000")
+const socket = io("https://server-tombola.glitch.me/")
 const router = useRouter();
 const store = useStorage();
 const gameSettings = ref({

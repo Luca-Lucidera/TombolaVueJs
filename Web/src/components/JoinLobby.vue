@@ -8,7 +8,7 @@ const router = useRouter();
 const lobbyPiena = ref(false);
 const erroreConnessione = ref(false)
 const store = useStorage();
-const socket = io('http://localhost:3000')
+const socket = io('https://server-tombola.glitch.me/')
 
 socket.io.on('error', (err) => {
     console.log('Error connecting to server');

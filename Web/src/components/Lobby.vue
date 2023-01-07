@@ -45,7 +45,7 @@ onMounted(() => {
 function updateLobby() {
     setInterval(function () {
         if (!lobbyPiena.value) {
-            axios.get('http://localhost:3000/getUser')
+            axios.get('https://server-tombola.glitch.me/getUser')
                 .then((resp) => {
                     const { data, status } = resp
                     if (data && status == 200) {
